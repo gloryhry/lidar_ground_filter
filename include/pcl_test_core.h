@@ -67,7 +67,7 @@ private:
                      const std_msgs::Header &in_header);
 
 public:
-  PclTestCore(ros::NodeHandle &nh);
+  PclTestCore(ros::NodeHandle &nh,std::string topic);
   ~PclTestCore();
   void Spin();
 };

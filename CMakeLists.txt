@@ -8,6 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
 pcl_ros
 roscpp
 sensor_msgs
+message_filters
 )
 
 find_package(PCL 1.7 REQUIRED)
@@ -23,10 +24,14 @@ include_directories(
 )
 link_directories(${PCL_LIBRARY_DIRS})
 
+
 add_executable(${PROJECT_NAME}_node src/pcl_test_node.cpp src/pcl_test_core.cpp)
-
-
 target_link_libraries(${PROJECT_NAME}_node
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
+
+add_executable(multi2single_lidar src/multi2single.cpp)
+target_link_libraries(multi2single_lidar 
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES})

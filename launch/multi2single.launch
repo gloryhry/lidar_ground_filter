@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="pcl_test" type="pcl_test_node" name="pcl_test_node" output="screen"/>
+
+    <node pkg="pcl_test" type="multi2single_lidar" name="multi2single_lidar" output="screen" >
+        <param name="input_lidar_num" value="4" />
+        <param name="input_lidar_1" value="/lidar/vlp32_left/PointCloud2" />
+        <param name="input_lidar_2" value="/lidar/vlp32_right/PointCloud2" />
+        <param name="input_lidar_3" value="/lidar/vlp16_leftback/PointCloud2" />
+        <param name="input_lidar_4" value="/lidar/vlp16_rightback/PointCloud2" />
+    </node>
+</launch>
