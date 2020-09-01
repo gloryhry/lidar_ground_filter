@@ -13,7 +13,11 @@
                 "/home/adam/catkin_ws/src/gps_pkg/include",
                 "/home/adam/catkin_ws/src/serial/include",
                 "/home/adam/catkin_ws/src/twist_controller/include",
-                "/usr/include"
+                "/usr/include",
+                "${workspaceFolder}/include",
+                "/opt/ros/melodic/include",
+                "/usr/include/pcl-1.8",
+                "/usr/include/eigen3"
             ],
             "name": "Linux",
             "intelliSenseMode": "gcc-x64"

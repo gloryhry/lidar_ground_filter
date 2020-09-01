@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "ground_filter",
+			"path": ".."
+		},
+		{
+			"name": "radar_lidar_calibration",
+			"path": "../../radar_lidar_calibration"
+		},
+		{
+			"name": "pioneer_radar_ws",
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"python.autoComplete.extraPaths": [
+			"/media/psf/Home/Pioneer_Code/pioneer_radar_ws/devel/lib/python2.7/dist-packages",
+			"/opt/ros/melodic/lib/python2.7/dist-packages"
+		]
+	}
+}

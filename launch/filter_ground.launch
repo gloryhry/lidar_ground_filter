@@ -1,5 +1,11 @@
 <launch>
-    <node pkg="pcl_test" type="pcl_test_node" name="pcl_test_node" output="screen">
+    <!-- <node pkg="pcl_test" type="pcl_test_node" name="pcl_test_node" output="screen">
         <param name="lidar_topic" value="/lidar/vlp32_right/PointCloud2" />
-    </node>
+    </node> -->
+
+    <node pkg="pcl_test" type="ground_filter_node" name="ground_filter_node" output="screen" >
+        <param name="input_topic" value="/lidar/vlp16_front_left/PointCloud2" />
+        <param name="ground_topic" value="/filtered_points_ground" />
+        <param name="no_ground_topic" value="/filtered_points_no_ground"/>
+        </node>
 </launch>

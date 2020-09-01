@@ -35,3 +35,10 @@ add_executable(multi2single_lidar src/multi2single.cpp)
 target_link_libraries(multi2single_lidar 
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES})
+
+add_executable(ground_filter_node src/ground_filter_node.cpp
+                                  src/ground_filter.cpp)
+target_link_libraries(ground_filter_node
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+)
